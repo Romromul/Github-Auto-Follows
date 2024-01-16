@@ -1,3 +1,12 @@
 # ninja log v5
 0	825	7271255817992829	CMakeFiles/Github_Auto_Follows.dir/main.cpp.obj	5fe5f464d56e05ef
 827	972	7271255819413606	Github_Auto_Follows.exe	98bebb564f314d63
+6	243	7271269406952107	build.ninja	3c7e735c7ed609da
+0	776	7271270333894252	CMakeFiles/Github_Auto_Follows.dir/basic_information_input.cpp.obj	941482998b1f2616
+776	923	7271270335332784	Github_Auto_Follows.exe	11dbd871fce6019b
+4	756	7271272090819372	CMakeFiles/Github_Auto_Follows.dir/basic_information_input.cpp.obj	941482998b1f2616
+756	900	7271272092230316	Github_Auto_Follows.exe	11dbd871fce6019b
+4	776	7271272908361774	CMakeFiles/Github_Auto_Follows.dir/basic_information_input.cpp.obj	941482998b1f2616
+777	935	7271272909871861	Github_Auto_Follows.exe	11dbd871fce6019b
+4	728	7271273303924455	CMakeFiles/Github_Auto_Follows.dir/basic_information_input.cpp.obj	941482998b1f2616
+729	855	7271273305146960	Github_Auto_Follows.exe	11dbd871fce6019b

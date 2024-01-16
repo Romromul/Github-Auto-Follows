@@ -3,4 +3,4 @@ project(Github_Auto_Follows)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Github_Auto_Follows main.cpp)
+add_executable(Github_Auto_Follows "basic information input.cpp")
