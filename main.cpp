@@ -1,21 +1,18 @@
 #include <iostream>
 #include <string>
-#include "information.h"
+#include "Information Input.h"
+#include "Sieve Information.h"
 
-#define argc_size 6
+#define Information_Size 6
 
-int main() {
-    Arguments args;
-    int argc=argc_size;
-    std::string argv[argc_size];
-    for (int i=0;i<argc;i++){
-        std::cin >> argv[i];
-    }
-    if (parseArguments(argc, argv, args)) {
-        std::cout << args.token << "\n" << args.myUsername << "\n" << args.userTarget << std::endl;
-    } else {
-        std::cerr << "Error parsing command-line arguments." << std::endl;
-        return 1;
-    }
+using namespace std;
+
+int main(void){
+    User_Information User;
+    string Information[Information_Size];
+    Information_Input(Information_Size, Information);
+    parseArguments(Information_Size, Information, User);
+
+    cout << User.Token << "\n" << User.UserName << "\n" << User.UserTarget << "\n";
     return 0;
 }

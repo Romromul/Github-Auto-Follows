@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(Github_Auto_Follows
         main.cpp
-        information.cpp
-        information.h
+        "Sieve Information.cpp"
+        "Sieve Information.h"
+        "Information Input.h"
+        "Information Input.cpp"
 )
