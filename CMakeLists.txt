@@ -7,4 +7,4 @@ add_executable(Github_Auto_Follows
         main.cpp
         information.cpp
         information.h
-        "python change test code.cpp")
+)
