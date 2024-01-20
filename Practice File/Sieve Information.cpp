@@ -8,11 +8,9 @@ void parseArguments(int Information_size, string Information[], User_Information
         string Command = Information[i];
         if (Command == "-t" || Command == "--token") {
             User.Token = Information[++i];
-        }
-        else if (Command == "-m" || Command == "--username") {
+        } else if (Command == "-m" || Command == "--username") {
             User.UserName = Information[++i];
-        }
-        else if (Command == "-u" || Command == "--usertarget") {
+        } else if (Command == "-u" || Command == "--usertarget") {
             User.UserTarget = Information[++i];
         }
     }

@@ -9,4 +9,6 @@ add_executable(Github_Auto_Follows
         "Header File/Sieve Information.h"
         "Header File/Information Input.h"
         "Practice File/Information Input.cpp"
+        "Header File/Base64 Encodeing.h"
+        "Practice File/Base64 Encodeing.cpp"
 )
