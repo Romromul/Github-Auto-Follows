@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "Information Input.h"
-#include "Sieve Information.h"
+#include "Header File/Information Input.h"
+#include "Header File/Sieve Information.h"
 
 #define Information_Size 6
 
