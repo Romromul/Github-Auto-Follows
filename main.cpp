@@ -12,7 +12,7 @@ int main(void) {
     User_Information User;
     string Information[Information_Size];
     Information_Input(Information_Size, Information);
-    parseArguments(Information_Size, Information, User);
+    Sieve_Information(Information_Size, Information, User);
 
     cout << User.Token << "\n" << User.UserName << "\n" << User.UserTarget << "\n";
     string HEADER = base64_encode(User.UserName + ":" + User.Token);

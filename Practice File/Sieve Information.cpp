@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void parseArguments(int Information_size, string Information[], User_Information &User) {
+void Sieve_Information(int Information_size, string Information[], User_Information &User) {
     for (int i = 0; i < Information_size; i++) {
         string Command = Information[i];
         if (Command == "-t" || Command == "--token") {

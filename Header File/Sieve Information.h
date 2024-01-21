@@ -10,4 +10,4 @@ struct User_Information {
     string UserTarget;
 };
 
-void parseArguments(int Information_Size, string Information[], User_Information &User);
+void Sieve_Information(int Information_Size, string Information[], User_Information &User);
