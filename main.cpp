@@ -2,7 +2,7 @@
 #include <string>
 #include "Header File/Information Input.h"
 #include "Header File/Sieve Information.h"
-#include "Header File/Base64 Encodeing.h"
+#include "Header File/Base64.h"
 
 #define Information_Size 6
 
@@ -15,6 +15,7 @@ int main(void) {
     parseArguments(Information_Size, Information, User);
 
     cout << User.Token << "\n" << User.UserName << "\n" << User.UserTarget << "\n";
-    cout << base64_encode(User.UserName + ":" + User.Token);
+    string HEADER = base64_encode(User.UserName + ":" + User.Token);
+    cout << HEADER;
     return 0;
 }
