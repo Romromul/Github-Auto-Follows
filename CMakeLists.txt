@@ -11,4 +11,6 @@ add_executable(Github_Auto_Follows
         "Practice File/Information Input.cpp"
         "Header File/Base64.h"
         "Practice File/Base64.cpp"
+        "Practice File/HTTP Request.cpp"
+        "Header File/HTTP Request.h"
 )

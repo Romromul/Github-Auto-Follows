@@ -17,7 +17,6 @@ string base64_encode(unsigned char const *bytes_to_encode, size_t in_len, bool u
 
     string ret;
     ret.reserve(len_encoded);
-
     unsigned int pos = 0;
 
     while (pos < in_len) {
