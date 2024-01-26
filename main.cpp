@@ -16,6 +16,11 @@ int main(void) {
     Sieve_Information(Information_Size, Information, User);
     string HEADER = base64_encode(User.UserName + ":" + User.Token);
     string URL = "https://api.github.com/user";
-    cout << HTTP_Request_GET(URL, HEADER);
+    string Request_Code = HTTP_Request_GET(URL, HEADER);
+    if (Request_Code.length()>=1000) {
+        cout << Request_Code;
+    } else {
+        cout << "404 ERROR";
+    }
     return 0;
 }
