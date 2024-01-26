@@ -14,13 +14,18 @@ int main(void) {
     string Information[Information_Size];
     Information_Input(Information_Size, Information);
     Sieve_Information(Information_Size, Information, User);
+
     string HEADER = base64_encode(User.UserName + ":" + User.Token);
-    string URL = "https://api.github.com/user";
-    string Request_Code = HTTP_Request_GET(URL, HEADER);
-    if (Request_Code.length()>=1000) {
-        cout << Request_Code;
+    string User_URL = "https://api.github.com/user";
+    string User_Target_Followers_URL = "https://api.github.com/users/" + User.UserTarget + "/followers";
+    string User_Following_URL = "https://api.github.com/user/following/";
+    string User_Page_Request_Str = HTTP_Request_GET(User_URL, HEADER);
+
+    if (User_Page_Request_Str.length() < 1000) {
+        cout << "ERROR";
     } else {
-        cout << "404 ERROR";
+        cout << "Connecting OK!";
+
     }
     return 0;
 }
